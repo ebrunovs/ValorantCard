@@ -17,14 +17,14 @@ export default function Home() {
           </div>
           <button className={styles.sendcard}>ENVIAR</button>
         </div>
-        <div className={styles.rightside}>
-          <div className={styles.rform}>
-            <div>
-              <span>Pesquise pelo modelo da Arma</span>
-              <input type="search" placeholder="Digite o modelo da arma" />
+        <div className={styles.rcards}>
+          <div className={styles.rightside}>
+            <div className={styles.line_guns}>
+              <span className={styles.text}>Pesquise pelo modelo da Arma</span>
+              <input className={styles.custom_input} type="search" placeholder="Digite o modelo da arma" />
             </div>
-            <div>
-              <span>Cor de Fundo</span>
+            {/* <div className={styles.rcard}>
+              <span className={styles.text}>Cor de Fundo</span>
               <div>
                 <button>Branco</button>
                 <button>Preto</button>
@@ -46,39 +46,40 @@ export default function Home() {
                   <button>Preto</button>
                 </div>
               </div>
-            </div>
-            <div>
-              <form>
+            </div> */}
+            <div className={styles.upload}>
+              <form className={styles.form}>
                 <div>
-                  <div>
-                    <h2>Capa</h2>
-                    <p>Formatos: png, .jpg</p>
+                  <div className={styles.cover}>
+                    <h2 className={styles.h2}>Capa</h2>
+                    <p className={styles.p}> Formatos: png, .jpg</p>
                   </div>
-                  <label>
+                  <label className={styles.custom_upload}>
                     <div></div>
                     <div>
                       <svg></svg>
                     </div>
-                    <p>Arraste um arquivo ou clique aqui</p>
-                    <span>Photo upload</span>
+                    <p className={styles.click_here}>Arraste um arquivo ou clique aqui</p>
                   </label>
                 </div>
-                <button></button>
+                <button className={styles.button}>
+                  <p className={styles.send}>Enviar</p>
+                </button>
               </form>
             </div>
             <div>
-              <form>
-                <label>
-                  <span>Titulo:</span>
-                  <input></input>
+              <form className={styles.line_guns}>
+                <label className={styles.custom_text_input}>
+                  <span className={styles.custom_text}>Titulo:</span>
+                  <input className={styles.custom_inp}/>
                 </label>
-                <label>
-                <span>Autor:</span>
-                <input></input>
+                <label className={styles.custom_text_input}>
+                  <span className={styles.custom_text}>Autor:</span>
+                  <input className={styles.custom_inp}/>
                 </label>
-                <label>
-                <span>Atributos:</span>
-                <input></input>
+                <label className={styles.custom_text_input}>
+                  <span className={styles.custom_text}>Atributos:</span>
+                  <input className={styles.custom_inp}/>
                 </label>
               </form>
             </div>
