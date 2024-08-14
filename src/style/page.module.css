@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.main {
+    background-color: #2F2F2F;
+    color: white;
+}
+
+.margins {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.title {
+    text-wrap: balance;
+    word-break: break-word;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 95px;
+    text-transform: uppercase;
+    color: rgb(236, 232, 225);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    min-height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.leftside{
+    min-width: 40%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    min-height: 100vh;
+}
+
+.lcard{
+    width: 20rem;
+}
+
+.card{
+    background-image: linear-gradient(to bottom, #b28452, #000000);
+    background-color: #b28452;
+    transition: all 0.5s;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 2.5rem; /* 10 * 0.25rem (base unit) */
+    padding-bottom: 2.5rem; /* 10 * 0.25rem (base unit) */
+    aspect-ratio: 9 / 16;
+}
+
+.intocard{
+    background-color: #b28452; /* bg-indigo-300 */
+    transition: all 0.5s; /* transition-all duration-500 */
+    width: 15rem; /* w-60 (60 * 0.25rem) */
+    z-index: 20; /* z-20 */
+    position: relative; /* relative */
+    opacity: 1; /* opacity-100 (assumindo que a opacidade completa é desejada) */
+    color: white; /* text-white */
+    padding-top: 1.6rem; /* py-[1.6rem] */
+    padding-bottom: 1.6rem; /* py-[1.6rem] */
+    padding-left: 1.2rem; /* px-[1.2rem] */
+    padding-right: 1.2rem; /* px-[1.2rem] */
+    border-radius: 0.75rem; /* rounded-xl */
+    color: black; /* text-black */
+}
+
+.sendcard {
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%); /* bg-deluge-600 */
+    color: white; /* text-neutral-100 */
+    font-weight: bold;
+    padding-left: 2rem; /* px-8 (8 * 0.25rem) */
+    padding-right: 2rem; /* px-8 (8 * 0.25rem) */
+    padding-top: 0.5rem; /* py-2 (2 * 0.25rem) */
+    padding-bottom: 0.5rem; /* py-2 (2 * 0.25rem) */
+    border-radius: 9999px; /* rounded-full */
+    border: 1px solid #6b4e9b; /* border border-deluge-600 */
+    transition: all 0.5s; 
+}
+
+.rightside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.rform{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
