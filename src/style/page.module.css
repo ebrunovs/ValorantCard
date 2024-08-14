@@ -1,13 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
 .main {
     background-color: #0F1923;
     color: white;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .margins {
     margin-left: 10rem;
     margin-right: 10rem;
+}
+
+.breadcrumbs {
+    font-size: 1rem;
+    color: #666; /* Cor mais clara para os passos antigos */
+}
+
+.breadcrumbs span {
+    color: #666; /* Cor mais clara para os passos antigos */
+}
+
+.breadcrumbs span.current {
+    color: rgb(236, 232, 225); /* Cor mais escura para o passo atual */
+     /* Negrito para destacar o passo atual */
+}
+
+.breadcrumbs span::after {
+    content: " > ";
+    color: #666; /* Cor mais clara para o separador */
+}
+
+.breadcrumbs span:last-child::after {
+    content: ""; /* Remove o separador do último item */
 }
 
 .title {
@@ -42,7 +67,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem; 
-    min-height: 100vh;
+    min-height: 25rem;
     width: 100%;
     height: auto;
 }
@@ -59,6 +84,11 @@
 }
 
 .subtitle {
+    position: absolute;
+    bottom: -0.5rem; /* Ajuste conforme necessário para a altura desejada fora da imagem */
+    left: 0;
+    right: 0;
+    z-index: 1;
     width: 100%;
     background: #ECE8E1; /* Fundo semitransparente */
     color: #0F1923;
@@ -68,13 +98,16 @@
     box-sizing: border-box; /* Inclui padding na largura total */
     font-weight: bold;
     margin-top: 0;
+    transform: translateY(50%); /* Ajuste conforme necessário para a altura desejada */
 }
+
 
 .ps{
     margin: 0;
 }
 
 .sendcard {
+    margin-top: 2rem;
     background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%); /* bg-deluge-600 */
     color: white; /* text-neutral-100 */
     font-weight: bold;
@@ -245,4 +278,20 @@
 .custom_inp:focus{
     border-color: #7c3aed; /* focus:border-deluge-600 em Tailwind CSS */
     background-color: #3f3f3f;
+}
+
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    color: #333;
 }
