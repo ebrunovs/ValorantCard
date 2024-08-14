@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .main {
-    background-color: #2F2F2F;
+    background-color: #0F1923;
     color: white;
 }
 
@@ -35,7 +35,6 @@
 }
 
 .leftside{
-    min-width: 40%;
     position: sticky;
     top: 0;
     display: flex;
@@ -44,41 +43,35 @@
     justify-content: center;
     gap: 2rem; 
     min-height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
 .lcard{
-    width: 20rem;
-}
-
-.card{
-    background-image: linear-gradient(to bottom, #b28452, #000000);
-    background-color: #b28452;
-    transition: all 0.5s;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    padding-top: 2.5rem; /* 10 * 0.25rem (base unit) */
-    padding-bottom: 2.5rem; /* 10 * 0.25rem (base unit) */
-    aspect-ratio: 9 / 16;
+    width: 100%;
+    height: auto;
+}
+.main_pincture{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
 }
 
-.intocard{
-    background-color: #b28452; /* bg-indigo-300 */
-    transition: all 0.5s; /* transition-all duration-500 */
-    width: 15rem; /* w-60 (60 * 0.25rem) */
-    z-index: 20; /* z-20 */
-    position: relative; /* relative */
-    opacity: 1; /* opacity-100 (assumindo que a opacidade completa é desejada) */
-    color: white; /* text-white */
-    padding-top: 1.6rem; /* py-[1.6rem] */
-    padding-bottom: 1.6rem; /* py-[1.6rem] */
-    padding-left: 1.2rem; /* px-[1.2rem] */
-    padding-right: 1.2rem; /* px-[1.2rem] */
-    border-radius: 0.75rem; /* rounded-xl */
-    color: black; /* text-black */
+.subtitle {
+    width: 100%;
+    background: #ECE8E1; /* Fundo semitransparente */
+    color: #0F1923;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+    box-sizing: border-box; /* Inclui padding na largura total */
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.ps{
+    margin: 0;
 }
 
 .sendcard {
@@ -90,20 +83,20 @@
     padding-top: 0.5rem; /* py-2 (2 * 0.25rem) */
     padding-bottom: 0.5rem; /* py-2 (2 * 0.25rem) */
     border-radius: 9999px; /* rounded-full */
-    border: 1px solid #6b4e9b; /* border border-deluge-600 */
-    transition: all 0.5s; 
 }
 
 .rightside{
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 1rem;
+    margin-bottom: 2rem 0;
 }
 
 .rcards{
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
+    border-radius: 10px;
+    margin-bottom: 3rem;
 }
 
 .line_guns{
@@ -112,7 +105,8 @@
     gap: 0.5rem; /* gap-2 em Tailwind CSS */
     padding: 1rem; /* p-4 em Tailwind CSS */
     border-radius: 0.75rem; /* rounded-xl em Tailwind CSS */
-    background-color: rgba(55, 65, 81, 0.6); /* bg-neutral-700/60 em Tailwind CSS */
+    background-color: #2F2F2F; /* bg-neutral-700/60 em Tailwind CSS */
+    margin: 4px;
 }
 
 .text{
@@ -142,7 +136,6 @@
 }
 
 .upload{
-    width: 100%; /* w-full em Tailwind CSS */
     padding: 1rem; /* p-4 em Tailwind CSS */
     display: flex; /* flex em Tailwind CSS */
     flex-direction: column; /* flex-col em Tailwind CSS */
@@ -151,7 +144,8 @@
     gap: 2rem; /* gap-8 em Tailwind CSS */
     margin: auto; /* m-auto em Tailwind CSS */
     border-radius: 0.75rem; /* rounded-xl em Tailwind CSS */
-    background-color: rgba(55, 65, 81, 0.6); /* bg-neutral-700/60 em Tailwind CSS */
+    background-color: #2F2F2F; /* bg-neutral-700/60 em Tailwind CSS */
+    margin: 0.1px 4px;
 }
 
 .form{

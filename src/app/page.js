@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "../style/page.module.css"
+import Imagem from 'next/image';
+import lineguns from '../../public/lineguns.jpg'
 
 export default function Home() {
   return (
@@ -9,11 +11,12 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.leftside}>
           <div className={styles.lcard}>
-            <div className={styles.card}>
-              <div className={styles.intocard}>
-                BLOCO AQUI
+              <Image className={styles.main_pincture} src={lineguns} alt="Linha de armas"/>
+              <div className={styles.subtitle}>
+                <p className={styles.ps}>Seu Subtítulo Aqui</p>
+                <p className={styles.ps}>Seu Subtítulo Aqui</p>
+                <p className={styles.ps}>Seu Subtítulo Aqui</p>
               </div>
-            </div>
           </div>
           <button className={styles.sendcard}>ENVIAR</button>
         </div>
@@ -23,30 +26,6 @@ export default function Home() {
               <span className={styles.text}>Pesquise pelo modelo da Arma</span>
               <input className={styles.custom_input} type="search" placeholder="Digite o modelo da arma" />
             </div>
-            {/* <div className={styles.rcard}>
-              <span className={styles.text}>Cor de Fundo</span>
-              <div>
-                <button>Branco</button>
-                <button>Preto</button>
-                <button>Azul</button>
-                <button>Vermelho</button>
-              </div>
-              <div>
-                <span>Formato Grande</span>
-                <button id="toggleButton" class="toggle-btn disabled">Disable</button>
-              </div>
-              <div>
-                <span>Formato Grande</span>
-                <button id="toggleButton" class="toggle-btn disabled">Disable</button>
-              </div>
-              <div>
-                <span>Cor do Texto</span>
-                <div>
-                  <button>Branco</button>
-                  <button>Preto</button>
-                </div>
-              </div>
-            </div> */}
             <div className={styles.upload}>
               <form className={styles.form}>
                 <div>
