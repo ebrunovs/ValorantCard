@@ -21,7 +21,6 @@ export default function Home() {
       <section className={styles.margins}>
         <div className={styles.breadcrumbs}>
           <span>Home</span>
-          <span>Comunidade</span>
           <span>Artistas</span>
           <span className={styles.current}>Envie sua Ideia para Nós</span>
         </div>
