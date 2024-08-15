@@ -48,6 +48,7 @@
 }
 
 .container {
+    padding-bottom: 3rem;
     position: relative;
     display: flex;
     flex-direction: column;

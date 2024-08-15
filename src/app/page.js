@@ -67,7 +67,7 @@ export default function Home() {
                     </label>
                   </div>
                   <button type="submit" className={styles.button}>
-                    <p className={styles.send}>Upar</p>
+                    <p className={styles.send}>Subir Imagem</p>
                   </button>
                 </form>
               </div>

@@ -11,7 +11,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.menu}>
                 <div className={styles.images}>
-                    <Image src={logo} alt="Logo tipo Riot" width={100} height={50} />
+                    <Image src={logo} alt="Logo tipo Riot" width={85} height={23} />
                     <Image src={valorantIcon} alt="Icone Valorant" width={40} height={45} />
                 </div>
                 <div className={styles.list_link}>
