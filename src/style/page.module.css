@@ -16,29 +16,23 @@
     padding-top: 1rem;
     font-size: 1rem;
     color: #666;
-    /* Cor mais clara para os passos antigos */
 }
 
 .breadcrumbs span {
     color: #666;
-    /* Cor mais clara para os passos antigos */
 }
 
 .breadcrumbs span.current {
     color: rgb(236, 232, 225);
-    /* Cor mais escura para o passo atual */
-    /* Negrito para destacar o passo atual */
 }
 
 .breadcrumbs span::after {
     content: " > ";
     color: #666;
-    /* Cor mais clara para o separador */
 }
 
 .breadcrumbs span:last-child::after {
     content: "";
-    /* Remove o separador do último item */
 }
 
 .title {
@@ -94,23 +88,19 @@
 .subtitle {
     position: absolute;
     bottom: -0.5rem;
-    /* Ajuste conforme necessário para a altura desejada fora da imagem */
     left: 0;
     right: 0;
     z-index: 1;
     width: 100%;
     background: #ECE8E1;
-    /* Fundo semitransparente */
     color: #0F1923;
     padding: 0.5rem;
     font-size: 1rem;
     text-align: left;
     box-sizing: border-box;
-    /* Inclui padding na largura total */
     font-weight: bold;
     margin-top: 0;
     transform: translateY(50%);
-    /* Ajuste conforme necessário para a altura desejada */
 }
 
 
@@ -131,6 +121,11 @@
     border-radius: 100px;
 }
 
+.sendcard:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
 .rightside {
     display: flex;
     flex-direction: column;
@@ -140,7 +135,6 @@
 
 .rcards {
     width: 100%;
-    /* background-color: #000; */
     border-radius: 10px;
     margin-bottom: 3rem;
 }
@@ -148,23 +142,15 @@
 .line_guns {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    /* gap-2 em Tailwind CSS */
+    gap: 2px;
     padding: 1rem;
-    /* p-4 em Tailwind CSS */
     border-radius: 0.75rem;
-    /* rounded-xl em Tailwind CSS */
     background-color: #2F2F2F;
-    /* bg-neutral-700/60 em Tailwind CSS */
     margin: 4px;
 }
 
 .text {
-    margin-bottom: 0.5rem;
-    /* mb-2 em Tailwind CSS */
     font-size: 1.25rem;
-    /* text-xl em Tailwind CSS */
-    /* font-weight: bold; */
 }
 
 .custom_input {
@@ -185,11 +171,8 @@
 
 .custom_input::placeholder {
     color: #fff;
-    /* Cor do texto do placeholder */
     font-size: 0.860rem;
-    /* Tamanho da fonte do placeholder */
     font-weight: normal;
-    /* Espessura da fonte do placeholder */
     opacity: 0.60;
 }
 
@@ -203,26 +186,26 @@
 .tp{
     margin-top: 0;
     margin-bottom: 0;
-    
     padding: 5px;
     border-radius: 100px;
     font-size: 0.600rem;
     font-family: 'Arial', sans-serif;
+    background-color: #2F2F2F;
+    color: white;
+    border: 1px solid white; /* Add this line to set the border color to white */
 }
 
-/* Tooltip text */
 .tooltiptext {
+    font-family: 'Arial', sans-serif;
     visibility: hidden;
-    width: 120px;
     font-size: 0.775rem;
-    background-color: black;
-    color: #fff;
+    background-color: white;
+    color: black;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px 5px;
     border-radius: 6px;
-    /* Position the tooltip text - see examples below! */
     position: relative;
-    bottom: 30px; /* Move 10px down from its original position */
+    bottom: 30px;
     left: 10px;
     z-index: 1;
     transform: translateX(10%);
@@ -230,7 +213,6 @@
     transition: opacity 0.3s;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tp:hover + .tooltiptext {
     visibility: visible;
     opacity: 1;
@@ -242,33 +224,21 @@
 
 .upload {
     padding: 1rem;
-    /* p-4 em Tailwind CSS */
     display: flex;
-    /* flex em Tailwind CSS */
     flex-direction: column;
-    /* flex-col em Tailwind CSS */
     align-items: center;
-    /* items-center em Tailwind CSS */
     justify-content: center;
-    /* justify-center em Tailwind CSS */
     gap: 2rem;
-    /* gap-8 em Tailwind CSS */
     margin: auto;
-    /* m-auto em Tailwind CSS */
     border-radius: 0.75rem;
-    /* rounded-xl em Tailwind CSS */
     background-color: #2F2F2F;
-    /* bg-neutral-700/60 em Tailwind CSS */
     margin: 0.1px 4px;
 }
 
 .form {
     display: grid;
-    /* grid em Tailwind CSS */
     gap: 1.5rem;
-    /* gap-6 em Tailwind CSS */
     width: 100%;
-    /* w-full em Tailwind CSS */
     max-width: 316px;
 }
 
@@ -282,90 +252,83 @@
 
 .h2 {
     font-size: 1.25rem;
-    /* text-xl em Tailwind CSS */
     font-weight: normal;
     margin-bottom: 0px;
 }
 
 .p {
-    font-size: 0.800rem;
-    /* text-sm em Tailwind CSS */
+    font-size: 0.700rem;
     color: #f1f1f1;
     font-weight: lighter;
     margin: 0 0 12px;
+    font-family: 'Arial', sans-serif;
+    opacity: 0.7;
 }
 
 .custom_upload {
     position: relative;
-    /* relative em Tailwind CSS */
     margin-top: 0.5rem;
-    /* mt-2 em Tailwind CSS */
     display: flex;
-    /* flex em Tailwind CSS */
     height: 11rem;
-    /* h-44 em Tailwind CSS */
     cursor: pointer;
-    /* cursor-pointer em Tailwind CSS */
     flex-direction: column;
-    /* flex-col em Tailwind CSS */
     align-items: center;
-    /* items-center em Tailwind CSS */
     justify-content: center;
-    /* justify-center em Tailwind CSS */
     border-radius: 0.5rem;
-    /* rounded-lg em Tailwind CSS */
     border-color: #e5e5e5;
-    /* border-seashell-200 em Tailwind CSS */
     background-color: #464646;
-    /* bg-seashell-500 em Tailwind CSS */
     transition: all 0.2s;
 }
 
+.fupload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iupload{
+    width: 45px;
+    height: 45px;
+}
+
 .click_here {
-    margin-top: 0.5rem;
-    /* mt-2 em Tailwind CSS */
     text-align: center;
-    /* text-center em Tailwind CSS */
     font-size: 0.875rem;
-    /* text-sm em Tailwind CSS */
     color: #d1d1d1;
+    opacity: 0.7;
+    font-family: 'Arial', sans-serif;
 }
 
 .button {
-    /* cursor-not-allowed em Tailwind CSS */
     border-color: #d1d1d1;
-    /* border-seashell-300 em Tailwind CSS */
     background-color: #e5e5e5;
-    /* bg-seashell-400 em Tailwind CSS */
     color: #4a4a4a;
-    /* text-seashell-700 em Tailwind CSS */
     display: flex;
-    /* flex em Tailwind CSS */
     height: 2.5rem;
-    /* h-10 em Tailwind CSS */
-    width: 100%;
-    /* w-full em Tailwind CSS */
     align-items: center;
-    /* items-center em Tailwind CSS */
     justify-content: center;
-    /* justify-center em Tailwind CSS */
-    border-radius: 9999px;
-    /* rounded-full em Tailwind CSS */
+    justify-items: center;
+    border-radius: 10px;
     border: 1px solid;
-    /* border em Tailwind CSS */
     font-size: 0.875rem;
-    /* text-sm em Tailwind CSS */
     transition: all 0.5s;
 }
 
+.button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
 .alert {
-    padding: 0.3rem;
+    padding: 0.3rem 0.5rem;
     position: fixed;
-    border-radius: 50px;
+    border-radius: 10px;
     top: 95%;
     right: 2%;
     background-color: green;
     animation: slide-in 0.5s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    font-size: small;
 }
 
 @keyframes slide-in {
@@ -384,11 +347,8 @@
 
 .custom_text_input {
     display: flex;
-    /* flex em Tailwind CSS */
     flex-direction: column;
-    /* flex-col em Tailwind CSS */
     font-size: 1rem;
-    /* text-base em Tailwind CSS */
     font-weight: normal;
 }
 
@@ -396,39 +356,7 @@
     margin-bottom: 0.5rem;
 }
 
-.custom_inp {
-    font-size: 1rem;
-    /* text-base em Tailwind CSS */
-    font-weight: 500;
-    /* font-medium em Tailwind CSS */
-    border: 1px solid transparent;
-    /* border e border-transparent em Tailwind CSS */
-    padding-left: 0.75rem;
-    /* px-3 em Tailwind CSS */
-    padding-right: 0.75rem;
-    /* px-3 em Tailwind CSS */
-    padding-top: 0.5rem;
-    /* py-2 em Tailwind CSS */
-    padding-bottom: 0.5rem;
-    /* py-2 em Tailwind CSS */
-    margin-bottom: 0.75rem;
-    /* mb-3 em Tailwind CSS */
-    outline: none;
-    /* outline-none em Tailwind CSS */
-    background-color: #2d2d2d;
-    /* bg-neutral-800 em Tailwind CSS */
-    border-radius: 0.5rem;
-    /* rounded-lg em Tailwind CSS */
-    transition: all 0.3s;
-}
-
-.custom_inp:focus {
-    border-color: #7c3aed;
-    /* focus:border-deluge-600 em Tailwind CSS */
-    background-color: #3f3f3f;
-}
-
-.chips-container {
+.chips_container {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;

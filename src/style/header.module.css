@@ -42,6 +42,11 @@
     border-radius: 10px;
 }
 
+.button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
 .divButton{
     margin-right: 20px;
     align-items: center;

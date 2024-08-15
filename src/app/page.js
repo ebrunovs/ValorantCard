@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import styles from "../style/page.module.css";
 import Image from 'next/image';
 import lineguns from '../../public/lineguns.jpg';
-import info from '../../public/info.png';
 import upload from '../../public/upload.png';
 
 export default function Home() {
@@ -45,7 +44,7 @@ export default function Home() {
                 <span className={styles.text}>Pesquise pelo modelo</span>
                 <div className={styles.tooltip}>
                   <button className={styles.tp}>?</button>
-                  <span className={styles.tooltiptext}>Tooltip text</span>
+                  <span className={styles.tooltiptext}>Digite o modelo, linha ou personagem no qual sua arte teve como base.</span>
                 </div>
                 <input
                   className={styles.custom_input}
@@ -61,45 +60,43 @@ export default function Home() {
                       <p className={styles.p}> Formatos: png, .jpg</p>
                     </div>
                     <label className={styles.custom_upload}>
-                      <div></div>
-                      <div>
-                        <svg></svg>
+                      <div className={styles.fupload}>
+                        <Image className={styles.iupload} src={upload} alt="Icone de Upload" />
+                        <p className={styles.click_here}>Arraste um arquivo ou clique aqui</p>
                       </div>
-                      <p className={styles.click_here}>Arraste um arquivo ou clique aqui</p>
                     </label>
                   </div>
                   <button type="submit" className={styles.button}>
-                    <p className={styles.send}>Enviar</p>
+                    <p className={styles.send}>Upar</p>
                   </button>
                 </form>
               </div>
-              {showAlert && <div className={styles.alert}>Arquivo enviado com sucesso!</div>}
+              {showAlert && <div className={styles.alert}>Upload Concluído ✓</div>}
               <div>
                 <form className={styles.line_guns}>
                   <label className={styles.custom_text_input}>
                     <span className={styles.custom_text}>Titulo:</span>
-                    <input className={styles.custom_inp} />
+                    <input className={styles.custom_input} />
                   </label>
                   <label className={styles.custom_text_input}>
-                    <span className={styles.custom_text}>Autor:</span>
-                    <input className={styles.custom_inp} />
+                    <span className={styles.custom_text}>Artista:</span>
+                    <input className={styles.custom_input} />
                   </label>
                   <label className={styles.custom_text_input}>
                     <span className={styles.custom_text}>Atributos:</span>
-                    <input className={styles.custom_inp} />
-                    <div className={styles.chipsContainer}>
-                      <div className={styles.chip}>Exemplo 1</div>
-                      <div className={styles.chip}>Exemplo 2</div>
-                      <div className={styles.chip}>Exemplo 1</div>
-                      <div className={styles.chip}>Exemplo 2</div>
-                      <div className={styles.chip}>Exemplo 1</div>
-                      <div className={styles.chip}>Exemplo 2</div>
-                      <div className={styles.chip}>Exemplo 1</div>
-                      <div className={styles.chip}>Exemplo 2</div>
-                      <div className={styles.chip}>Exemplo 1</div>
-                      <div className={styles.chip}>Exemplo 2</div>
-                      <div className={styles.chip}>Exemplo 1</div>
-                      <div className={styles.chip}>Exemplo 2</div>
+                    <input className={styles.custom_input} />
+                    <div className={styles.chips_container}>
+                      <div className={styles.chip}>FUZIL</div>
+                      <div className={styles.chip}>ESCOPETA</div>
+                      <div className={styles.chip}>ARMA LEVE</div>
+                      <div className={styles.chip}>FOGO</div>
+                      <div className={styles.chip}>FACAS TÁTICA</div>
+                      <div className={styles.chip}>CAOS</div>
+                      <div className={styles.chip}>METRAPLHADORA</div>
+                      <div className={styles.chip}>VERMELHO</div>
+                      <div className={styles.chip}>SUBMETRALHADORA</div>
+                      <div className={styles.chip}>LARANJA</div>
+                      <div className={styles.chip}>FUZIL DE PRECISÃO</div>
                     </div>
                   </label>
                 </form>
