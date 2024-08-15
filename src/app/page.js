@@ -33,7 +33,7 @@ export default function Home() {
               <div className={styles.subtitle}>
                 <p className={styles.ps}>Linha Skins Primordium</p>
                 <p className={styles.ps}>Types// Arsenal Completo</p>
-                <p className={styles.ps}>Esta linda coleção trás um ar mais 'infernal' que pune seus inimigos de forma majestosa</p>
+                <p className={styles.ps}>Esta linda coleção trás um ar mais &apos;infernal&apos; que pune seus inimigos de forma majestosa</p>
               </div>
             </div>
             <button className={styles.sendcard}>ENVIAR</button>
