@@ -1,0 +1,59 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownHover {
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none; /* Remove o contorno quando o botão é focado */
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdownMenu {
+  display: none; /* Esconde o menu por padrão */
+  position: absolute;
+  background-color: #292929;
+  border-top: 5px solid #ff4655;
+  margin-top: 5px;
+  list-style: none;
+  padding: 0;
+  width: 150px;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdownMenu,
+.dropdownMenu:hover {
+  display: block; /* Exibe o menu quando o mouse está sobre o contêiner ou o próprio menu */
+}
+
+.dropdownMenu li {
+  padding: 10px;
+}
+
+.dropdownMenu li a {
+  text-decoration: none;
+  color: #bebebe;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.dropdownMenu li a:hover {
+  background-color: #464646;
+  width: 100%;
+}
+
+.dropdownHover:hover {
+  color: #ff4655;
+}
+
+.arrow {
+  width: 10px;
+  height: 20px;
+  margin-left: 5px;
+}

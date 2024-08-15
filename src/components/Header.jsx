@@ -1,38 +1,37 @@
+import logo from "../../public/logo_riot.png"
+import valorantIcon from "../../public/valorant_icon.png"
+import Image from "next/image";
+import styles from "../style/header.module.css"
+import DropDownMenu from "./DropDownMenu";
+
+
+
 export default function Header(){
     return(
-        <header>
-            <div>
-                <div>
-                    <img src="" alt="Imagem aqui" />
-                    <img src="" alt="Imagem aqui 2" />
+        <header className={styles.header}>
+                <div className={styles.images}>
+                    <Image src={logo} alt="Imagem aqui" width={95} height={60}/>
+                    <Image src={valorantIcon} alt="Imagem aqui" width={85} height={60}/>
                 </div>
-                <div>
-                    <li>
-                        <ul>INFORMAÇÕES DO JOGO</ul>
-                        <ul>MÍDIA</ul>
-                        <ul>NOTICIAS</ul>
-                        <ul>PLACAR</ul>
-                        <ul>SUPORTE</ul>
-                        <ul>SOCIAL</ul>
-                        <ul>ESPORTS</ul>
-                        <ul>COMUNIDADE</ul>
-                    </li>
+                <div className={styles.list_link}>
+                        <a href="">INFORMAÇÕES DO JOGO</a>
+                        <a href="">MÍDIA</a>
+                        <a href="">NOTICIAS</a>
+                        <a href="">PLACAR</a>
+                        <a href="">SUPORTE</a>
+                        <DropDownMenu/>
                 </div>
-                <div>
-                    <div>
-                        <input type="search" placeholder="Search..." />
-                        <button type="submit">Search</button>
+                <div className={styles.services}>
+                    <div className={styles.input}> 
+                        <input type="search" placeholder="Pesquisar..."/>
                     </div>
-                    <div>
-                        dark Theme
-                    </div>
-                    <div>
-                        <button>
+                   
+                    <div className={styles.divButton}>
+                        <button className={styles.button}>
                             JOGUE AGORA
                         </button>
                     </div>
                 </div>
-            </div>
         </header>
     );
 }
