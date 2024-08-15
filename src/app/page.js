@@ -31,6 +31,7 @@ export default function Home() {
               <Image className={styles.main_pincture} src={lineguns} alt="Linha de armas" />
               <div className={styles.subtitle}>
                 <p className={styles.ps}>Linha Skins Primordium</p>
+                <p className={styles.ps}>Artista// @ursuladorada</p>
                 <p className={styles.ps}>Types// Arsenal Completo</p>
                 <p className={styles.ps}>Esta linda coleção trás um ar mais &apos;infernal&apos; que pune seus inimigos de forma majestosa</p>
               </div>
@@ -79,6 +80,10 @@ export default function Home() {
                   </label>
                   <label className={styles.custom_text_input}>
                     <span className={styles.custom_text}>Artista:</span>
+                    <input className={styles.custom_input} />
+                  </label>
+                  <label className={styles.custom_text_input}>
+                    <span className={styles.custom_text}>Descrição:</span>
                     <input className={styles.custom_input} />
                   </label>
                   <label className={styles.custom_text_input}>
