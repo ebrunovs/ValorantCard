@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.main {
+    background-color: #0F1923;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+}
+
+.margins {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.breadcrumbs {
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+    /* Cor mais clara para os passos antigos */
+}
+
+.breadcrumbs span {
+    color: #666;
+    /* Cor mais clara para os passos antigos */
+}
+
+.breadcrumbs span.current {
+    color: rgb(236, 232, 225);
+    /* Cor mais escura para o passo atual */
+    /* Negrito para destacar o passo atual */
+}
+
+.breadcrumbs span::after {
+    content: " > ";
+    color: #666;
+    /* Cor mais clara para o separador */
+}
+
+.breadcrumbs span:last-child::after {
+    content: "";
+    /* Remove o separador do último item */
+}
+
+.title {
+    text-wrap: balance;
+    word-break: break-word;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 95px;
+    text-transform: uppercase;
+    color: rgb(236, 232, 225);
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    min-height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.leftside {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 25rem;
+    width: 100%;
+    height: auto;
+}
+
+.lcard {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.main_pincture {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: -0.5rem;
+    /* Ajuste conforme necessário para a altura desejada fora da imagem */
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    background: #ECE8E1;
+    /* Fundo semitransparente */
+    color: #0F1923;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+    box-sizing: border-box;
+    /* Inclui padding na largura total */
+    font-weight: bold;
+    margin-top: 0;
+    transform: translateY(50%);
+    /* Ajuste conforme necessário para a altura desejada */
+}
+
+
+.ps {
+    margin: 0;
+}
+
+.sendcard {
+    margin-top: 2rem;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    /* bg-deluge-600 */
+    color: white;
+    /* text-neutral-100 */
+    font-weight: bold;
+    padding-left: 2rem;
+    /* px-8 (8 * 0.25rem) */
+    padding-right: 2rem;
+    /* px-8 (8 * 0.25rem) */
+    padding-top: 0.5rem;
+    /* py-2 (2 * 0.25rem) */
+    padding-bottom: 0.5rem;
+    /* py-2 (2 * 0.25rem) */
+    border-radius: 9999px;
+    /* rounded-full */
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem 0;
+}
+
+.rcards {
+    width: 100%;
+    /* background-color: #000; */
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.line_guns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* gap-2 em Tailwind CSS */
+    padding: 1rem;
+    /* p-4 em Tailwind CSS */
+    border-radius: 0.75rem;
+    /* rounded-xl em Tailwind CSS */
+    background-color: #2F2F2F;
+    /* bg-neutral-700/60 em Tailwind CSS */
+    margin: 4px;
+}
+
+.text {
+    margin-bottom: 0.5rem;
+    /* mb-2 em Tailwind CSS */
+    font-size: 1.25rem;
+    /* text-xl em Tailwind CSS */
+    /* font-weight: bold; */
+}
+
+.custom_input {
+    font-size: 1rem;
+    /* text-base em Tailwind CSS */
+    font-weight: 500;
+    /* font-medium em Tailwind CSS */
+    border: 1px solid transparent;
+    /* border e border-transparent em Tailwind CSS */
+    padding-left: 0.75rem;
+    /* px-3 em Tailwind CSS */
+    padding-right: 0.75rem;
+    /* px-3 em Tailwind CSS */
+    padding-top: 0.5rem;
+    /* py-2 em Tailwind CSS */
+    padding-bottom: 0.5rem;
+    /* py-2 em Tailwind CSS */
+    margin-bottom: 0.75rem;
+    /* mb-3 em Tailwind CSS */
+    outline: none;
+    /* outline-none em Tailwind CSS */
+    background-color: #2d2d2d;
+    /* bg-neutral-800 em Tailwind CSS */
+    border-radius: 0.5rem;
+    /* rounded-lg em Tailwind CSS */
+    background-color: #464646;
+    transition: background-color 300ms, border-color 300ms;
+    /* transition e duration-300 em Tailwind CSS */
+}
+
+.custom_input::placeholder {
+    color: #fff;
+    /* Cor do texto do placeholder */
+    font-size: 0.860rem;
+    /* Tamanho da fonte do placeholder */
+    font-weight: normal;
+    /* Espessura da fonte do placeholder */
+    opacity: 0.60;
+}
+
+.tooltip {
+    display: flex;
+    justify-items: flex-end;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.tp{
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    padding: 5px;
+    border-radius: 100px;
+    font-size: 0.600rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Tooltip text */
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    font-size: 0.775rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: relative;
+    bottom: 30px; /* Move 10px down from its original position */
+    left: 10px;
+    z-index: 1;
+    transform: translateX(10%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tp:hover + .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.custom_input:focus {
+    border-color: #7c3aed;
+    /* focus:border-deluge-600 em Tailwind CSS */
+    background-color: #3f3f3f;
+    /* focus:bg-neutral-700 em Tailwind CSS */
+}
+
+.upload {
+    padding: 1rem;
+    /* p-4 em Tailwind CSS */
+    display: flex;
+    /* flex em Tailwind CSS */
+    flex-direction: column;
+    /* flex-col em Tailwind CSS */
+    align-items: center;
+    /* items-center em Tailwind CSS */
+    justify-content: center;
+    /* justify-center em Tailwind CSS */
+    gap: 2rem;
+    /* gap-8 em Tailwind CSS */
+    margin: auto;
+    /* m-auto em Tailwind CSS */
+    border-radius: 0.75rem;
+    /* rounded-xl em Tailwind CSS */
+    background-color: #2F2F2F;
+    /* bg-neutral-700/60 em Tailwind CSS */
+    margin: 0.1px 4px;
+}
+
+.form {
+    display: grid;
+    /* grid em Tailwind CSS */
+    gap: 1.5rem;
+    /* gap-6 em Tailwind CSS */
+    width: 100%;
+    /* w-full em Tailwind CSS */
+    max-width: 316px;
+}
+
+.cover {
+    margin-bottom: 1rem
+}
+
+.cover>*+* {
+    margin-top: 0.25rem;
+}
+
+.h2 {
+    font-size: 1.25rem;
+    /* text-xl em Tailwind CSS */
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.p {
+    font-size: 0.800rem;
+    /* text-sm em Tailwind CSS */
+    color: #f1f1f1;
+    font-weight: lighter;
+    margin: 0 0 12px;
+}
+
+.custom_upload {
+    position: relative;
+    /* relative em Tailwind CSS */
+    margin-top: 0.5rem;
+    /* mt-2 em Tailwind CSS */
+    display: flex;
+    /* flex em Tailwind CSS */
+    height: 11rem;
+    /* h-44 em Tailwind CSS */
+    cursor: pointer;
+    /* cursor-pointer em Tailwind CSS */
+    flex-direction: column;
+    /* flex-col em Tailwind CSS */
+    align-items: center;
+    /* items-center em Tailwind CSS */
+    justify-content: center;
+    /* justify-center em Tailwind CSS */
+    border-radius: 0.5rem;
+    /* rounded-lg em Tailwind CSS */
+    border-color: #e5e5e5;
+    /* border-seashell-200 em Tailwind CSS */
+    background-color: #464646;
+    /* bg-seashell-500 em Tailwind CSS */
+    transition: all 0.2s;
+}
+
+.click_here {
+    margin-top: 0.5rem;
+    /* mt-2 em Tailwind CSS */
+    text-align: center;
+    /* text-center em Tailwind CSS */
+    font-size: 0.875rem;
+    /* text-sm em Tailwind CSS */
+    color: #d1d1d1;
+}
+
+.button {
+    /* cursor-not-allowed em Tailwind CSS */
+    border-color: #d1d1d1;
+    /* border-seashell-300 em Tailwind CSS */
+    background-color: #e5e5e5;
+    /* bg-seashell-400 em Tailwind CSS */
+    color: #4a4a4a;
+    /* text-seashell-700 em Tailwind CSS */
+    display: flex;
+    /* flex em Tailwind CSS */
+    height: 2.5rem;
+    /* h-10 em Tailwind CSS */
+    width: 100%;
+    /* w-full em Tailwind CSS */
+    align-items: center;
+    /* items-center em Tailwind CSS */
+    justify-content: center;
+    /* justify-center em Tailwind CSS */
+    border-radius: 9999px;
+    /* rounded-full em Tailwind CSS */
+    border: 1px solid;
+    /* border em Tailwind CSS */
+    font-size: 0.875rem;
+    /* text-sm em Tailwind CSS */
+    transition: all 0.5s;
+}
+
+.send {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.custom_text_input {
+    display: flex;
+    /* flex em Tailwind CSS */
+    flex-direction: column;
+    /* flex-col em Tailwind CSS */
+    font-size: 1rem;
+    /* text-base em Tailwind CSS */
+    font-weight: normal;
+}
+
+.custom_text {
+    margin-bottom: 0.5rem;
+}
+
+.custom_inp {
+    font-size: 1rem;
+    /* text-base em Tailwind CSS */
+    font-weight: 500;
+    /* font-medium em Tailwind CSS */
+    border: 1px solid transparent;
+    /* border e border-transparent em Tailwind CSS */
+    padding-left: 0.75rem;
+    /* px-3 em Tailwind CSS */
+    padding-right: 0.75rem;
+    /* px-3 em Tailwind CSS */
+    padding-top: 0.5rem;
+    /* py-2 em Tailwind CSS */
+    padding-bottom: 0.5rem;
+    /* py-2 em Tailwind CSS */
+    margin-bottom: 0.75rem;
+    /* mb-3 em Tailwind CSS */
+    outline: none;
+    /* outline-none em Tailwind CSS */
+    background-color: #2d2d2d;
+    /* bg-neutral-800 em Tailwind CSS */
+    border-radius: 0.5rem;
+    /* rounded-lg em Tailwind CSS */
+    transition: all 0.3s;
+}
+
+.custom_inp:focus {
+    border-color: #7c3aed;
+    /* focus:border-deluge-600 em Tailwind CSS */
+    background-color: #3f3f3f;
+}
+
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    color: #333;
+}
