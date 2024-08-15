@@ -1,9 +1,12 @@
-import { Inter } from "next/font/google";
+import { Bebas_Neue } from '@next/font/google';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../style/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const bebasNeue = Bebas_Neue({
+  weight: '400', // ou '700', dependendo do peso que você deseja
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: "ValorantCard",
@@ -13,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-        <body className={inter.className} >
+        <body className={bebasNeue.className} >
           <Header/>
           {children}
           <Footer/>

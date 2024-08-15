@@ -4,7 +4,6 @@
 .main {
     background-color: #0F1923;
     color: white;
-    font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
 }
 
@@ -45,7 +44,6 @@
 .title {
     text-wrap: balance;
     word-break: break-word;
-    font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     font-size: 100px;
     line-height: 95px;
@@ -123,20 +121,14 @@
 .sendcard {
     margin-top: 2rem;
     background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
-    /* bg-deluge-600 */
     color: white;
-    /* text-neutral-100 */
+    font-size: 12px;
     font-weight: bold;
-    padding-left: 2rem;
-    /* px-8 (8 * 0.25rem) */
-    padding-right: 2rem;
-    /* px-8 (8 * 0.25rem) */
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 0.5rem;
-    /* py-2 (2 * 0.25rem) */
     padding-bottom: 0.5rem;
-    /* py-2 (2 * 0.25rem) */
-    border-radius: 9999px;
-    /* rounded-full */
+    border-radius: 100px;
 }
 
 .rightside {
@@ -177,30 +169,18 @@
 
 .custom_input {
     font-size: 1rem;
-    /* text-base em Tailwind CSS */
     font-weight: 500;
-    /* font-medium em Tailwind CSS */
     border: 1px solid transparent;
-    /* border e border-transparent em Tailwind CSS */
     padding-left: 0.75rem;
-    /* px-3 em Tailwind CSS */
     padding-right: 0.75rem;
-    /* px-3 em Tailwind CSS */
     padding-top: 0.5rem;
-    /* py-2 em Tailwind CSS */
     padding-bottom: 0.5rem;
-    /* py-2 em Tailwind CSS */
     margin-bottom: 0.75rem;
-    /* mb-3 em Tailwind CSS */
     outline: none;
-    /* outline-none em Tailwind CSS */
     background-color: #2d2d2d;
-    /* bg-neutral-800 em Tailwind CSS */
     border-radius: 0.5rem;
-    /* rounded-lg em Tailwind CSS */
     background-color: #464646;
-    transition: background-color 300ms, border-color 300ms;
-    /* transition e duration-300 em Tailwind CSS */
+    color: white;
 }
 
 .custom_input::placeholder {
@@ -257,10 +237,7 @@
 }
 
 .custom_input:focus {
-    border-color: #7c3aed;
-    /* focus:border-deluge-600 em Tailwind CSS */
-    background-color: #3f3f3f;
-    /* focus:bg-neutral-700 em Tailwind CSS */
+    border-color: rgb(179, 58, 58);
 }
 
 .upload {
@@ -379,6 +356,25 @@
     font-size: 0.875rem;
     /* text-sm em Tailwind CSS */
     transition: all 0.5s;
+}
+
+.alert {
+    padding: 0.3rem;
+    position: fixed;
+    border-radius: 50px;
+    top: 95%;
+    right: 2%;
+    background-color: green;
+    animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .send {

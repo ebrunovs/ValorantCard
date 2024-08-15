@@ -1,3 +1,6 @@
+"use client";
+
+import React, { useState } from 'react';
 import styles from "../style/page.module.css";
 import Image from 'next/image';
 import lineguns from '../../public/lineguns.jpg';
@@ -5,11 +8,20 @@ import info from '../../public/info.png';
 import upload from '../../public/upload.png';
 
 export default function Home() {
+
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false), 3000); // Oculta o alerta após 3 segundos
+  };
+
   return (
     <main className={styles.main}>
       <section className={styles.margins}>
         <div className={styles.breadcrumbs}>
-          <span>LogoValorant</span>
+          <span>Home</span>
           <span>Comunidade</span>
           <span>Artistas</span>
           <span className={styles.current}>Envie sua Ideia para Nós</span>
@@ -42,7 +54,7 @@ export default function Home() {
                 />
               </div>
               <div className={styles.upload}>
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={handleSubmit}>
                   <div>
                     <div className={styles.cover}>
                       <h2 className={styles.h2}>Capa</h2>
@@ -56,11 +68,12 @@ export default function Home() {
                       <p className={styles.click_here}>Arraste um arquivo ou clique aqui</p>
                     </label>
                   </div>
-                  <button className={styles.button}>
+                  <button type="submit" className={styles.button}>
                     <p className={styles.send}>Enviar</p>
                   </button>
                 </form>
               </div>
+              {showAlert && <div className={styles.alert}>Arquivo enviado com sucesso!</div>}
               <div>
                 <form className={styles.line_guns}>
                   <label className={styles.custom_text_input}>
